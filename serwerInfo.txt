@@ -1,0 +1,17 @@
+/registration?email=email&login=login&password=password
+jeśli login zajety to info zwrotne "login occupied"
+jeśli email zajety to info zwrotne "email occupied"
+jeśli dodano użytkownika to info zwrotne "ok"
+
+/login?login=login&password=password
+jesli użytkownik nie istnieje to info "user not exists"
+jeśli hasło niepoprawne to info "password incorrect"
+jeśli poprawnie zalogowano to info "ok"
+
+/logout
+jesli nie był zalogowany to info "user offline"
+jeśli poprawnie wylogowano to info "ok"
+
+/startrandomgame
+sprawdza czy user online
+zwraca mu istniejącą lub nowo stworzoną grę
